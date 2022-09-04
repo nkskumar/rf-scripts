@@ -1,6 +1,7 @@
 """
 This is a script to convert 2-port S-parameter data to ABCD-parameter data and vice versa.
 To run script, type python param_conv.py filename parameter_type on the command line like so:
+
 >python param_conv.py sample_file.s2p S dest_file_name 
 
 Author: Nithin Kumar Santha Kumar
