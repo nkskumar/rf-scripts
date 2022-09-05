@@ -101,8 +101,7 @@ def main():
         else:
             raise ValueError("Invalid parameter type!")
     else:
-        raise ValueError("File type must be .s2p!")
-    
+        raise ValueError("File type must be .s2p!")  
 
 def to_sparam(data,z0,frmt):
     """_summary_
