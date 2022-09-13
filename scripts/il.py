@@ -13,7 +13,7 @@ Email: nithinkumar.santhakumar@utdallas.edu
 Date: 09/13/2022
 License: MIT
 """
-from math import log10
+import numpy as np
 import sys
 import os
 
@@ -32,7 +32,7 @@ def main():
     if unit == "dBm" or unit == "dBW":
         insertion_loss = p_ref - p_out
     else: 
-        insertion_loss = 10 * log10(p_ref / p_out)
+        insertion_loss = 10 * np.log10(p_ref / p_out)
     
     print(f"Reference Power: {p_ref} {unit}, Output Power: {p_out} {unit}")
     print(f"Insertion Loss (dB): {insertion_loss} dB")
